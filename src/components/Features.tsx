@@ -3,33 +3,33 @@ import { GitPullRequest, FileCheck, MessageSquare, Tag, Shield, Settings } from 
 const features = [
   {
     icon: GitPullRequest,
-    title: "Análise de Pull Requests",
-    description: "Identifica inconsistências estruturais, problemas de organização e padrões que impactam manutenibilidade."
+    title: "Pull Request Analysis",
+    description: "Identifies structural inconsistencies, organization issues, and patterns that impact maintainability."
   },
   {
     icon: FileCheck,
-    title: "Higiene do Repositório",
-    description: "Valida arquivos essenciais como README, LICENSE e CI. Identifica configurações ausentes ou obsoletas."
+    title: "Repository Hygiene",
+    description: "Validates essential files like README, LICENSE, and CI. Identifies missing or outdated configurations."
   },
   {
     icon: MessageSquare,
-    title: "Comentários Técnicos",
-    description: "Interage automaticamente com issues e pull requests, comentando com sugestões técnicas relevantes."
+    title: "Technical Comments",
+    description: "Automatically interacts with issues and pull requests, commenting with relevant technical suggestions."
   },
   {
     icon: Tag,
-    title: "Aplicação de Rótulos",
-    description: "Aplica labels automaticamente para categorizar e organizar issues e PRs de forma consistente."
+    title: "Label Application",
+    description: "Automatically applies labels to categorize and organize issues and PRs consistently."
   },
   {
     icon: Shield,
-    title: "Segurança por Design",
-    description: "Opera com permissões explícitas e controladas, seguindo o modelo de segurança do GitHub Apps."
+    title: "Security by Design",
+    description: "Operates with explicit and controlled permissions, following the GitHub Apps security model."
   },
   {
     icon: Settings,
-    title: "Sinalização Inteligente",
-    description: "Pode fechar ou sinalizar itens quando apropriado, mantendo o repositório organizado."
+    title: "Smart Signaling",
+    description: "Can close or flag items when appropriate, keeping the repository organized."
   }
 ];
 
@@ -39,10 +39,10 @@ const Features = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            O que o Cleaner Agent faz
+            What Cleaner Agent Does
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Automação assistiva que ajuda desenvolvedores sem substituir decisões humanas
+            Assistive automation that helps developers without replacing human decisions
           </p>
         </div>
         

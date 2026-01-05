@@ -3,36 +3,36 @@ import { Globe, Puzzle, Lock, Users } from "lucide-react";
 const principles = [
   {
     icon: Globe,
-    title: "Generalista",
-    description: "Não é limitado a um único projeto ou organização. Funciona em qualquer repositório."
+    title: "Generalist",
+    description: "Not limited to a single project or organization. Works on any repository."
   },
   {
     icon: Puzzle,
-    title: "Extensível",
-    description: "Novas regras e agentes podem ser adicionados progressivamente conforme necessário."
+    title: "Extensible",
+    description: "New rules and agents can be progressively added as needed."
   },
   {
     icon: Lock,
-    title: "Seguro por Design",
-    description: "Acesso mínimo necessário aos repositórios. Permissões explícitas e controladas."
+    title: "Secure by Design",
+    description: "Minimum necessary access to repositories. Explicit and controlled permissions."
   },
   {
     icon: Users,
-    title: "Automação Assistiva",
-    description: "Ajuda desenvolvedores, não substitui decisões humanas. Suporte, não controle."
+    title: "Assistive Automation",
+    description: "Helps developers, doesn't replace human decisions. Support, not control."
   }
 ];
 
 const Philosophy = () => {
   return (
-    <section id="philosophy" className="py-20 px-6">
+    <section id="about" className="py-20 px-6">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Filosofia do Projeto
+            About Cleaner Agent
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Princípios que guiam o desenvolvimento e operação do Cleaner Agent
+            Principles that guide the development and operation of Cleaner Agent
           </p>
         </div>
         

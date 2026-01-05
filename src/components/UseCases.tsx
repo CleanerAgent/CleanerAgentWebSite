@@ -2,14 +2,14 @@ import { Building2, Code2 } from "lucide-react";
 
 const UseCases = () => {
   return (
-    <section id="use-cases" className="py-20 px-6 bg-muted/30">
+    <section id="who-is-it-for" className="py-20 px-6 bg-muted/30">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Casos de Uso
+            Who Is It For
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Ideal para organizações e projetos que buscam manter qualidade e consistência
+            Ideal for organizations and projects seeking to maintain quality and consistency
           </p>
         </div>
         
@@ -19,20 +19,20 @@ const UseCases = () => {
               <Building2 className="h-7 w-7 text-primary" />
             </div>
             <h3 className="text-xl font-semibold text-foreground mb-4">
-              Organizações
+              Organizations
             </h3>
             <ul className="space-y-3 text-muted-foreground">
               <li className="flex items-start gap-3">
                 <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
-                <span>Padronizar práticas em múltiplos repositórios</span>
+                <span>Standardize practices across multiple repositories</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
-                <span>Reduzir esforço manual de revisão</span>
+                <span>Reduce manual review effort</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
-                <span>Manter consistência ao longo do tempo</span>
+                <span>Maintain consistency over time</span>
               </li>
             </ul>
           </div>
@@ -42,20 +42,20 @@ const UseCases = () => {
               <Code2 className="h-7 w-7 text-primary" />
             </div>
             <h3 className="text-xl font-semibold text-foreground mb-4">
-              Projetos Open Source
+              Open Source Projects
             </h3>
             <ul className="space-y-3 text-muted-foreground">
               <li className="flex items-start gap-3">
                 <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
-                <span>Manutenção contínua automatizada</span>
+                <span>Automated continuous maintenance</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
-                <span>Triagem automatizada de issues e PRs</span>
+                <span>Automated triage of issues and PRs</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
-                <span>Feedback técnico inicial em pull requests</span>
+                <span>Initial technical feedback on pull requests</span>
               </li>
             </ul>
           </div>

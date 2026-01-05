@@ -7,10 +7,10 @@ const Integration = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Modelo de Integração
+            Integration Model
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Instalação simples e flexível para qualquer organização ou repositório
+            Simple and flexible installation for any organization or repository
           </p>
         </div>
         
@@ -22,7 +22,7 @@ const Integration = () => {
               </div>
               <h3 className="font-semibold text-foreground mb-2">GitHub App</h3>
               <p className="text-sm text-muted-foreground">
-                Funciona como um GitHub App nativo
+                Works as a native GitHub App
               </p>
             </div>
             
@@ -32,7 +32,7 @@ const Integration = () => {
               </div>
               <h3 className="font-semibold text-foreground mb-2">Webhook-Driven</h3>
               <p className="text-sm text-muted-foreground">
-                Pode ser executado como serviço externo
+                Can be run as an external service
               </p>
             </div>
             
@@ -42,18 +42,18 @@ const Integration = () => {
               </div>
               <h3 className="font-semibold text-foreground mb-2">Pipelines</h3>
               <p className="text-sm text-muted-foreground">
-                Integrado a pipelines automatizados
+                Integrated with automated pipelines
               </p>
             </div>
           </div>
           
           <div className="text-center">
             <p className="text-muted-foreground mb-6">
-              Instalado diretamente em organizações ou repositórios específicos
+              Installed directly on organizations or specific repositories
             </p>
             <Button size="lg" className="gap-2">
               <Github className="h-5 w-5" />
-              Instalar Cleaner Agent
+              Install Cleaner Agent
             </Button>
           </div>
         </div>

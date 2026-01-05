@@ -1,4 +1,3 @@
-import logo from "@/assets/cleaner-agent-logo.png";
 import { Github } from "lucide-react";
 
 const Footer = () => {
@@ -7,12 +6,16 @@ const Footer = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <img src={logo} alt="Cleaner Agent" className="h-8 w-auto" />
+            <img 
+              src="/cleaner-agent-logo-white.png" 
+              alt="Cleaner Agent" 
+              className="h-8 w-auto bg-primary rounded p-1" 
+            />
             <span className="font-semibold text-foreground">Cleaner Agent</span>
           </div>
           
           <p className="text-sm text-muted-foreground text-center">
-            Automação assistiva para manutenção de repositórios GitHub
+            Assistive automation for GitHub repository maintenance
           </p>
           
           <a 
@@ -28,7 +31,7 @@ const Footer = () => {
         
         <div className="mt-8 pt-6 border-t border-border text-center">
           <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} Cleaner Agent. Todos os direitos reservados.
+            © {new Date().getFullYear()} Cleaner Agent. All rights reserved.
           </p>
         </div>
       </div>
