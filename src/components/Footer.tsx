@@ -1,15 +1,19 @@
 import { Github } from "lucide-react";
+import { useTheme } from "@/hooks/useTheme";
 
 const Footer = () => {
+  const { theme } = useTheme();
+  const logoSrc = theme === "dark" ? "/logo-white.png" : "/logo-blue.png";
+
   return (
     <footer className="py-12 px-6 border-t border-border">
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
             <img 
-              src="/cleaner-agent-logo-white.png" 
+              src={logoSrc} 
               alt="Cleaner Agent" 
-              className="h-8 w-auto bg-primary rounded p-1" 
+              className="h-8 w-auto object-contain" 
             />
             <span className="font-semibold text-foreground">Cleaner Agent</span>
           </div>

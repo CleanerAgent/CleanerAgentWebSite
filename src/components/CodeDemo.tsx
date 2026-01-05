@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { Github, CheckCircle, MessageSquare, Tag } from "lucide-react";
+import { useTheme } from "@/hooks/useTheme";
 
 const CodeDemo = () => {
   const [step, setStep] = useState(0);
   const [cursorPos, setCursorPos] = useState({ x: 50, y: 50 });
   const [isClicking, setIsClicking] = useState(false);
+  const { theme } = useTheme();
 
   const steps = [
     { cursor: { x: 280, y: 85 }, action: "hover" },
@@ -30,6 +32,8 @@ const CodeDemo = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const logoSrc = theme === "dark" ? "/logo-white.png" : "/logo-blue.png";
+
   return (
     <div className="bg-card border border-border rounded-lg overflow-hidden shadow-lg relative h-[380px]">
       {/* GitHub-like header */}
@@ -50,9 +54,11 @@ const CodeDemo = () => {
         {/* Cleaner Agent Comment - appears after step 3 */}
         <div className={`border border-border rounded-lg p-3 mb-3 transition-all duration-300 ${step >= 4 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"}`}>
           <div className="flex items-center gap-2 mb-2">
-            <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center">
-              <span className="text-xs text-primary-foreground font-bold">C</span>
-            </div>
+            <img 
+              src={logoSrc} 
+              alt="Cleaner Agent" 
+              className="w-6 h-6 object-contain"
+            />
             <span className="text-xs font-medium text-foreground">Cleaner Agent</span>
             <span className="text-xs text-muted-foreground">just now</span>
           </div>
