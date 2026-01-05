@@ -1,73 +1,117 @@
-# Welcome to your Lovable project
+# Cleaner Agent
 
-## Project info
+Cleaner Agent is a **GitHub App** designed to assist with **repository maintenance, organization, and quality assurance** across GitHub organizations.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+It operates as an **assistive automation agent**, analyzing GitHub events and providing contextual feedback to help teams maintain healthy, well-structured repositories — without replacing human decision-making.
 
-## How can I edit this code?
+The app is **domain-agnostic** and can be used across **new or legacy repositories**, regardless of programming language or technology stack.
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## Overview
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Cleaner Agent focuses on **repository hygiene and operational consistency** by observing events such as pull requests, issues, and comments.
 
-Changes made via Lovable will be committed automatically to this repo.
+Rather than enforcing strict policies, the agent provides **guidance, visibility, and suggestions**, allowing maintainers to decide how and when to act.
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Key Capabilities
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Analyze pull requests for structural and organizational signals
+- Provide automated, contextual feedback via comments
+- Apply or update labels based on repository state
+- Assist with issue and PR triage
+- Validate the presence of common repository artifacts (e.g., README, CI configuration)
+- Operate safely using GitHub’s App permission model
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## How It Works
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Cleaner Agent subscribes to GitHub events and evaluates repository metadata when those events occur.
 
-# Step 3: Install the necessary dependencies.
-npm i
+Based on predefined rules and contextual analysis, the agent may:
+- Post informational comments
+- Suggest improvements
+- Apply labels
+- Flag items for further review
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+All actions are executed with **explicit, minimal permissions** granted at installation time.
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Security & Permissions
 
-**Use GitHub Codespaces**
+Cleaner Agent follows the **principle of least privilege**.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Typical permissions include:
+- Read access to repository metadata
+- Read/write access to issues and pull requests
+- Read access to repository contents when necessary
 
-## What technologies are used for this project?
+The app does **not** execute code, clone repositories, or modify source files by default.
 
-This project is built with:
+Authentication is handled using GitHub’s **GitHub Apps** security model, leveraging short-lived installation tokens.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+## Installation
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Cleaner Agent is installed directly from GitHub as a GitHub App.
 
-## Can I connect a custom domain to my Lovable project?
+1. Click **Install on GitHub**
+2. Select the target organization or account
+3. Choose the repositories where Cleaner Agent should operate
+4. Confirm the requested permissions
 
-Yes, you can!
+The app can be installed on:
+- All repositories
+- A selected subset of repositories (recommended for initial rollout)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## Behavior & Scope
+
+Cleaner Agent is designed to be **non-intrusive**.
+
+- It does not block merges
+- It does not enforce policies
+- It does not replace code reviews
+
+Instead, it acts as a **supportive assistant**, providing early feedback and operational insights while keeping humans in control.
+
+---
+
+## Extensibility
+
+The project is built with extensibility in mind.
+
+Future iterations may include:
+- Additional analysis rules
+- Organization-specific configurations
+- Deeper automation workflows
+- Optional integrations with CI/CD pipelines
+
+---
+
+## Project Status
+
+Cleaner Agent is currently in **early development**.
+
+Features and behavior may evolve as the project matures and real-world feedback is incorporated.
+
+---
+
+## License
+
+This project is open source.  
+License details will be provided in the repository.
+
+---
+
+## Links
+
+- Website: https://cleaner-agent.github.io
+- GitHub App: Available via GitHub Apps marketplace (coming soon)
+
