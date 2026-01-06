@@ -37,10 +37,12 @@ const Hero = () => {
 
               {/* Documentation */}
               <Button variant="outline" size="lg" className="gap-2 px-8" asChild>
-                <Link to="/documentation">
-                  Documentation
-                  <ArrowRight className="h-4 w-4" />
-                </Link>
+              <Link
+                to="/documentation"
+                className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+              >
+                Documentation
+              </Link>
               </Button>
             </div>
 
