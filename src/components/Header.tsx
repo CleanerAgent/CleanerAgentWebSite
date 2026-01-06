@@ -33,10 +33,14 @@ const Header = () => {
         </nav>
         <div className="flex items-center gap-2">
           <ThemeToggle />
-          <Button variant="secondary" className="gap-2">
-            <Github className="h-4 w-4" />
-            Install
-          </Button>
+        <Button
+          variant="secondary"
+          className="gap-2"
+          onClick={() => window.open("https://github.com/CleanerAgent", "_blank")}
+        >
+          <Github className="h-4 w-4" />
+          Install
+        </Button>
         </div>
       </div>
     </header>

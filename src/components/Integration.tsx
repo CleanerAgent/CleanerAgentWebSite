@@ -51,7 +51,11 @@ const Integration = () => {
             <p className="text-muted-foreground mb-6">
               Installed directly on organizations or specific repositories
             </p>
-            <Button size="lg" className="gap-2">
+            <Button
+              size="lg"
+              className="gap-2"
+              onClick={() => window.open("https://github.com/CleanerAgent", "_blank")}
+            >
               <Github className="h-5 w-5" />
               Install Cleaner Agent
             </Button>
