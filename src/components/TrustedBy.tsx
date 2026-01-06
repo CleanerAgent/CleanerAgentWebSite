@@ -6,10 +6,11 @@ type Company = {
 };
 
 const companies: Company[] = [
-  { src: "/src/assets/LogoMemoryCorInvertida.png", alt: "Memory Forensics" },
-  { src: "/src/assets/CleanerAg.png", alt: "Cleaner Agent" },
-  { src: "/src/assets/ValoraCommunity.png", alt: "Valora Community" },
+  { src: "/LogoMemoryCorInvertida.png", alt: "Memory Forensics" },
+  { src: "/CleanerAg.png", alt: "Cleaner Agent" },
+  { src: "/ValoraCommunity.png", alt: "Valora Community" },
 ];
+
 
 const TrustedBy: React.FC = () => {
   const { theme } = useTheme();
